@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    min-height: 100vh;
+    margin: 0;
+
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: center;
+}
+
+#board {
+    /* background-color: skyblue; */
+    background-image: url('assets/flappybirdbg.png');
+    border: 1px solid black;
+}
+
+#container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 25px;
+    color: white;
+
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: 3px solid #38761D;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #45a049;
+    border: 3px solid #38761D;
+    transform: translateY(3px);
+}
